@@ -10,7 +10,7 @@ chmod +x ts
 get() {
 rm -fr Tshake.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/tshakeab/Tshake/master/Tshake.lua"
+wget "https://raw.githubusercontent.com/TshAkETEAM/tshakex2/master/Tshake.lua"
 lua start.lua
 }
 installall(){
@@ -47,7 +47,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd Tshake
+cd tshakex2
 rm -rf luarocks*
 lua start.lua
 
