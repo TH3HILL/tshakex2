@@ -8,7 +8,7 @@ Installation
 
 install :
 
-```git clone https://github.com/tshakex2/tshakex2 && cd tshakex2 && chmod +x install.sh && ./install.sh```
+```git clone https://github.com/TshAkETEAM/tshakex2 && cd tshakex2 && chmod +x install.sh && ./install.sh```
 
 ______________________________________________________________________________________________________________________
 
