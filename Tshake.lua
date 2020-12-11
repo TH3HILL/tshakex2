@@ -399,7 +399,7 @@ end
 function Reply_Status(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "TSHAKETEAM")
+local UserName = (data.username_ or "Th3HiLL")
 for Tshake in string.gmatch(data.first_name_, "[^%s]+") do
 data.first_name_ = Tshake
 end
@@ -4443,7 +4443,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"🔘┇ حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "TSHAKETEAM")
+local UserName = (b.username_ or "Th3HiLL")
 send(msg.chat_id_, msg.id_,"🚸┇منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 end,nil)   
 end
@@ -4463,7 +4463,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"📬┇حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "TSHAKETEAM")
+local UserName = (b.username_ or "Th3HiLL")
 send(msg.chat_id_, msg.id_,"🚸┇تم ترقية منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 database:sadd(bot_id.."Tshake:Basic:Constructor"..msg.chat_id_,b.id_)
 end,nil)   
@@ -4498,8 +4498,8 @@ database:set(bot_id.."Tshake:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "📫┇تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."Tshake:Name:Bot") or "تشاكي") then
-Namebot = (database:get(bot_id.."Tshake:Name:Bot") or "تشاكي")
+if text == (database:get(bot_id.."Tshake:Name:Bot") or "الجحيم") then
+Namebot = (database:get(bot_id.."Tshake:Name:Bot") or "الجحيم")
 local namebot = {
 "عمري فداك "..Namebot.. " كول حب ",
 "كول حبيبي ؟ اني "..Namebot,
@@ -4518,7 +4518,7 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."Tshake:Name:Bot") or "تشاكي")
+Namebot = (database:get(bot_id.."Tshake:Name:Bot") or "الجحيم")
 send(msg.chat_id_, msg.id_,"اسمي القميل ["..Namebot.."] ") 
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" then 
@@ -5722,8 +5722,8 @@ if text == ("تحديث السورس") and DevTshake(msg) then
 send(msg.chat_id_,msg.id_,'☑┇تم التحديث')
 os.execute('rm -rf Tshake.lua')
 os.execute('rm -rf start.lua')
-download_to_file('https://raw.githubusercontent.com/tshakeab/Tshake/master/Tshake.lua', 'Tshake.lua') 
-download_to_file('https://raw.githubusercontent.com/tshakeab/Tshake/master/start.lua', 'start.lua') 
+download_to_file('https://raw.githubusercontent.com/TH3HILL/tshakex2/master/Tshake.lua', 'Tshake.lua') 
+download_to_file('https://raw.githubusercontent.com/TH3HILL/tshakex2/master/start.lua', 'start.lua') 
 dofile('Tshake.lua')  
 return false
 end
@@ -5843,7 +5843,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n📂┇اهلا بك في متجر ملفات تشاكي \n📮┇الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
+local TextS = "\n📂┇اهلا بك في متجر ملفات الجحيم \n📮┇الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
 local TextE = "\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n📌┇تدل علامة (✔) الملف مفعل\n".."📌┇تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -5985,18 +5985,18 @@ if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or tex
 Text = [[
 🔰 Welcome to Source 🔰
 
-🌐┇TshAkE TEAM 
+🌐┇HiLL TEAM 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📊┇ [Source Channel](https://t.me/ZX_XX)
+📊┇ [Source Channel](https://t.me/HiLL077)
 
-📋┇ [TshAkE Dev](https://t.me/TSHAKETEAM)
+📋┇ [HiLL Dev](https://t.me/HiLLTEAM)
 
-📁┇ [Source  Files](https://t.me/Tshake_sudo)
+📁┇ [Source  Files](https://t.me/Th3HiLL)
 
-🌐┇ [TshAkE iNDT](https://t.me/ZX_XX/4611)
+🌐┇ [HiLL iNDT](https://t.me/th3hill/50)
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-📧┇ [TWS TshAkE](https://t.me/A_5bot)
+📧┇ [hIll TshAkE](https://t.me/Th3HiLLBoT)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -6010,7 +6010,7 @@ Text = [[
 🎖┇م4 ~⪼ لعرض اوامر المنشئين
 👤┇م5 ~⪼ لعرض اوامر المطورين
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH @TSHAKETEAM
+📡┇CH @Th3HiLL
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -6048,7 +6048,7 @@ Text = [[
 🔐┇الكلايش
 🔐┇السيلفي
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇Ch ~⪼ @TSHAKETEAM
+📡┇Ch ~⪼ @Th3HiLL
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -6114,7 +6114,7 @@ Text = [[
 📮┇الصلاحيات
 📮┇الرابط
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH @TSHAKETEAM
+📡┇CH @Th3HiLL
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -6158,7 +6158,7 @@ Text = [[
 تغير رد المميز + النص
 تغير رد العضو + النص
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH @TSHAKETEAM
+📡┇CH @Th3HiLL
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -6183,7 +6183,7 @@ Text = [[
 ➕┇اضف رسائل + العدد بالرد
 ➕┇اضف مجوهرات + العدد بالرد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH @TSHAKETEAM
+📡┇CH @Th3HiLL
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -6229,7 +6229,7 @@ Text = [[
 ➕┇اذاعه بالتثبيت 
 ➕┇الاحصائيات 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH @TSHAKETEAM
+📡┇CH @Th3HiLL
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -6776,8 +6776,8 @@ if text == "تحديث السورس 📥" then
 send(msg.chat_id_,msg.id_,'☑┇تم التحديث')
 os.execute('rm -rf Tshake.lua')
 os.execute('rm -rf start.lua')
-download_to_file('https://raw.githubusercontent.com/tshakeab/Tshake/master/Tshake.lua', 'Tshake.lua') 
-download_to_file('https://raw.githubusercontent.com/tshakeab/Tshake/master/start.lua', 'start.lua') 
+download_to_file('https://raw.githubusercontent.com/TH3HILL/tshakex2/master/Tshake.lua', 'Tshake.lua') 
+download_to_file('https://raw.githubusercontent.com/TH3HILL/tshakex2/master/start.lua', 'start.lua') 
 dofile('Tshake.lua')  
 return false
 end
@@ -6911,7 +6911,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."Tshake:Name:Bot") or "تشاكي")
+local Name_Bot = (database:get(bot_id.."Tshake:Name:Bot") or "الجحيم")
 if not database:get(bot_id.."Tshake:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
