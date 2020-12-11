@@ -1,4 +1,4 @@
-TshAkE
+TshAkE HiLL
 ==============
 
 ______________________________________________________________________________________________________________________
@@ -8,7 +8,7 @@ Installation
 
 install :
 
-```git clone https://github.com/TshAkETEAM/tshakex2 && cd tshakex2 && chmod +x install.sh && ./install.sh```
+```git clone https://github.com/TH3HILL/tshakex2 && cd tshakex2 && chmod +x install.sh && ./install.sh```
 
 ______________________________________________________________________________________________________________________
 
